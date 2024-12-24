@@ -1,0 +1,186 @@
+body {
+    font-family: AlumniSans, sans-serif;
+    background-color: #D2CCCC; /* Цвет фона страницы */
+    color: #3B3A3A; /* Цвет текста */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-form {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px 15px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+.tests-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.test-card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.test-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.test-description {
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.test-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.test-link:hover {
+    background-color: #585f75;
+}
+
+body {
+    font-family: AlumniSans, sans-serif;
+    background-color: #D2CCCC; /* Цвет фона страницы */
+    color: #3B3A3A; /* Цвет текста */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+.test-page-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #EAE8E8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Заголовок теста */
+.test-page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Описание теста */
+.test-page-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Вопросы */
+.test-page-question-container {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок вопроса */
+.test-page-question-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Номер вопроса */
+.test-page-question-number {
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* Список ответов */
+.test-page-answer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.test-page-answer-list li {
+    margin-bottom: 10px;
+}
+
+/* Кнопка отправки */
+.test-page-submit-button-container {
+    margin-top: 20px;
+}
+
+.test-page-submit-button {
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.test-page-submit-button:hover {
+    background-color: #333;
+}
+
+

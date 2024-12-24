@@ -1,0 +1,427 @@
+body {
+    font-family: AlumniSans, sans-serif;
+    background-color: #D2CCCC;
+    color: #3B3A3A;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.create-page-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.create-page-input-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-page-input-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #2b2b2b;
+    flex: 1;
+}
+
+input[type="text"],
+input[type="number"] {
+    flex: 2;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.create-page-input-category-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-page-input-category-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #2b2b2b;
+    flex: 1;
+}
+
+.radio-button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-button label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.radio-button input[type="radio"]:checked + label {
+    background-color: #2b2b2b;
+    color: #fff;
+    border-color: #2b2b2b;
+}
+
+.radio-button label:hover {
+    background-color: #2b2b2b;
+    color: #fff;
+    border-color: #2b2b2b;
+}
+
+.create-page-submit-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.continue-button {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #444;
+}
+
+.description-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description-container p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+
+.description-container textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.continue-button {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.continue-button:hover {
+    background-color: #444;
+}
+.ask-creating {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ede7e7;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ask-creating-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ask-creating-value textarea {
+    flex: 1;
+    width: 100%;
+    min-height: 50px;
+    min-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.ask-creating-ask-ball {
+    width: 80px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ask-creating-ask-ball input[type="number"] {
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.ask-creating-ask-remove-div {
+    display: flex;
+    align-items: center;
+}
+
+.ask-creating-ask-remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+.ask-creating-ask-remove-button:hover {
+    transform: scale(1.1);
+}
+
+.ask-creating-ask-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ask-creating-field {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ask-creating-field-is-correct {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ask-creating-field-content-div textarea {
+    width: 100%;
+    max-height: 35px;
+    min-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.ask-creating-field-remove-div {
+    display: flex;
+    align-items: center;
+}
+
+.ask-creating-field-remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+.ask-creating-field-remove-button:hover {
+    transform: scale(1.1);
+}
+
+.ask-creating-ask-add-field {
+    text-align: center;
+}
+
+.ask-creating-ask-add-field-button {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ask-creating-ask-add-field-button:hover {
+    background-color: #444;
+}
+
+.ask-creating-create-ask-button {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+    display: block;
+}
+
+.ask-creating-create-ask-button:hover {
+    background-color: #444;
+}
+
+.test-result-creating {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3B3A3A;
+}
+
+#results-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.result-range {
+    background-color: #E4E2E2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-range-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.result-range-inputs label {
+    font-size: 1em;
+    color: #555;
+    flex: 1;
+}
+
+.result-range-inputs input[type="number"] {
+    flex: 2;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.result-range-inputs input[type="number"]:focus {
+    border-color: #2b2b2b;
+    outline: none;
+}
+
+.result-description {
+    margin-top: 10px;
+}
+
+.result-description label {
+    font-size: 1em;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.result-description textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.result-description textarea:focus {
+    border-color: #2b2b2b;
+    outline: none;
+}
+
+.remove-result-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-result-button:hover {
+    background-color: #e55a5a;
+    transform: scale(1.05);
+}
+
+.add-result-button, .continue-button {
+    margin: 20px auto 0;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+}
+
+.add-result-button:hover, .continue-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'AlumniSans';
+    src: url("../font/AlumniSans/AlumniSans-Bold.ttf");
+}
+
+body {
+    font-family: AlumniSans, sans-serif;
+    background-color: #D2CCCC;
+    color: #3B3A3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.form-container {
+    background-color: transparent;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-container h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #E4E2E2;
+    font-size: 20px;
+    font-family: 'AlumniSans', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"] {
+    background-color: #E4E2E2;
+    color: #3B3A3A;
+    border: 1px solid #3B3A3A;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'AlumniSans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #d0d0d0;
+}
+
+.links {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #3B3A3A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

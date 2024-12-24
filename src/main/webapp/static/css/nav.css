@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'AlumniSans';
+    src: url("../font/AlumniSans/AlumniSans-Bold.ttf");
+}
+
+img {
+    vertical-align: middle;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #3B3A3A;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navbar-links {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
+.nav-link {
+    color: #3B3A3A;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-family: AlumniSans, 'sans-serif';
+    text-decoration: none;
+}
+
