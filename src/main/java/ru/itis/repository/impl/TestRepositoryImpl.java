@@ -118,8 +118,8 @@ public class TestRepositoryImpl implements TestRepository {
     }
 
     @Override
-    public Optional<UUID> save(Test test) {
-        try (Connection connection = databaseConfig.getConnection();
+    public Optional<UUID> save(Test test, Connection connection) {
+        try (
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_TEST)) {
             statement.setObject(1, test.getUserId());
             statement.setString(2, test.getTitle());

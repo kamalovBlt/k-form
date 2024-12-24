@@ -7,6 +7,7 @@ import ru.itis.exception.EntityNotFoundException;
 import ru.itis.exception.IdNotReturnsException;
 import ru.itis.service.test.common.api.AnswerService;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.UUID;
 
@@ -26,8 +27,8 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
-    public UUID save(Answer answer) {
-        return answerRepository.save(answer).orElseThrow(
+    public UUID save(Answer answer, Connection connection) {
+        return answerRepository.save(answer, connection).orElseThrow(
                 () -> new IdNotReturnsException("Answer")
         );
     }

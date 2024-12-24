@@ -7,6 +7,7 @@ import ru.itis.exception.EntityNotFoundException;
 import ru.itis.exception.IdNotReturnsException;
 import ru.itis.service.test.common.api.TestService;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.UUID;
 
@@ -26,8 +27,8 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
-    public UUID save(Test test) {
-        return testRepository.save(test).orElseThrow(
+    public UUID save(Test test, Connection connection) {
+        return testRepository.save(test, connection).orElseThrow(
                 () -> new IdNotReturnsException("Test")
         );
     }

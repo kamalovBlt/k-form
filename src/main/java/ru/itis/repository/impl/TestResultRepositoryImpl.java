@@ -63,8 +63,8 @@ public class TestResultRepositoryImpl implements TestResultRepository {
     }
 
     @Override
-    public Optional<UUID> save(TestResult testResult) {
-        try (Connection connection = databaseConfig.getConnection();
+    public Optional<UUID> save(TestResult testResult, Connection connection) {
+        try (
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_TEST_RESULT)) {
             statement.setObject(1, testResult.getTestId());
             statement.setInt(2, testResult.getMinScore());

@@ -36,8 +36,7 @@ public class TestResultPageServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        User user = (User) req.getSession().getAttribute("user");
-        UUID userID = user.getId();
+        UUID userID = (UUID) req.getSession().getAttribute("userId");;
         Result result = getUserTestResultService.getUserTestResult(userID, UUID.fromString(req.getParameter("testId")));
         req.setAttribute("score", result.getScore());
         req.setAttribute("description", result.getDescription());
@@ -55,7 +54,7 @@ public class TestResultPageServlet extends HttpServlet {
         userCompletedTestsService.addRelation(userID, testID, LocalDateTime.now(), score);
         logger.info("user{} has completed test {} with score {}", userID, testID, score);
 
-        resp.sendRedirect(getServletContext().getContextPath() + "/testResult?testId=" + testID);
+        resp.sendRedirect(req.getServletContext().getContextPath() + "/testResult?testId=" + testID);
 
     }
 }

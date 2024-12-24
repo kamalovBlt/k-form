@@ -66,8 +66,8 @@ public class QuestionRepositoryImpl implements QuestionRepository {
     }
 
     @Override
-    public Optional<UUID> save(Question question) {
-        try (Connection connection = databaseConfig.getConnection();
+    public Optional<UUID> save(Question question, Connection connection) {
+        try (
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_QUESTION)) {
             statement.setObject(1, question.getTestId());
             statement.setInt(2, question.getNumber());

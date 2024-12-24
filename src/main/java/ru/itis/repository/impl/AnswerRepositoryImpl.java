@@ -66,8 +66,8 @@ public class AnswerRepositoryImpl implements AnswerRepository {
     }
 
     @Override
-    public Optional<UUID> save(Answer answer) {
-        try (Connection connection = databaseConfig.getConnection();
+    public Optional<UUID> save(Answer answer, Connection connection) {
+        try (
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_ANSWER)) {
             statement.setObject(1, answer.getQuestionId());
             statement.setString(2, answer.getText());

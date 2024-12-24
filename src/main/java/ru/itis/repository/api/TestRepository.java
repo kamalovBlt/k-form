@@ -2,6 +2,7 @@ package ru.itis.repository.api;
 
 import ru.itis.model.Test;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -14,7 +15,7 @@ public interface TestRepository {
 
     Optional<Test> findById(UUID uuid);
 
-    Optional<UUID> save(Test test);
+    Optional<UUID> save(Test test, Connection connection);
 
     boolean deleteById(UUID uuid);
 

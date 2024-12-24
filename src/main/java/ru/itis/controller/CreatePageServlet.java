@@ -40,6 +40,6 @@ public class CreatePageServlet extends HttpServlet {
         UUID userID = (UUID) req.getSession().getAttribute("userId");
         saveTestService.save(req.getInputStream(), userID);
         logger.info("created new test by" + userID);
-        resp.sendRedirect(getServletContext().getContextPath() + "/");
+        resp.sendRedirect(req.getServletContext().getContextPath() + "/");
     }
 }

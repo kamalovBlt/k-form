@@ -6,6 +6,7 @@ import ru.itis.repository.impl.TestResultRepositoryImpl;
 import ru.itis.exception.IdNotReturnsException;
 import ru.itis.service.test.common.api.TestResultService;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.UUID;
 
@@ -23,8 +24,8 @@ public class TestResultServiceImpl implements TestResultService {
     }
 
     @Override
-    public UUID save(TestResult testResult) {
-        return testResultRepository.save(testResult).orElseThrow(
+    public UUID save(TestResult testResult, Connection connection) {
+        return testResultRepository.save(testResult, connection).orElseThrow(
                 () -> new IdNotReturnsException("TestResult")
         );
     }
